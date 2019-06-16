@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import styled from '@emotion/styled'
 
@@ -15,17 +15,26 @@ const Container = styled.section`
   margin-right: auto;
 `
 
-const IndexPage = () => (
-  <Layout>
-    <SEO
-      title="You Would Not Believe Your Eyes"
-      description={`Fireflies but ALMOST every lyric is replaced with "You Would Not Believe Your Eyes" - Owl City`}/>
-    <FireFlies />
-    <Container>
-      <Video />
-      <h1>You would not believe your eyes...</h1>
-    </Container>
-  </Layout>
-)
+const IndexPage = () => {
+
+  useEffect(() => {
+    if (window.location.href.includes('netlify')) {
+      window.location.href = "https://youwouldnotbelieveyoureyes.com/"
+    }
+  })
+
+  return (
+    <Layout>
+      <SEO
+        title="You Would Not Believe Your Eyes"
+        description={`Fireflies but ALMOST every lyric is replaced with "You Would Not Believe Your Eyes" - Owl City`}/>
+      <FireFlies />
+      <Container>
+        <Video />
+        <h1>You would not believe your eyes...</h1>
+      </Container>
+    </Layout>
+  )
+}
 
 export default IndexPage
