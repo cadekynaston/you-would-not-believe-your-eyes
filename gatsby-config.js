@@ -36,5 +36,16 @@ module.exports = {
         trackingId: "UA-137604730-3",
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Indie Flower`,
+            subsets: [`cursive`],
+          }
+        ],
+      },
+    }
   ],
 }

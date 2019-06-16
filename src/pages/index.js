@@ -1,20 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from '@emotion/styled'
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { Video } from '../components/Video';
+import { FireFlies } from '../components/FireFlies';
+
+const Container = styled.section`
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hello world</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="You Would Not Believe Your Eyes" />
+    <FireFlies />
+    <Container>
+      <h1>You would not believe your eyes...</h1>
+      <Video />
+    </Container>
   </Layout>
 )
 
