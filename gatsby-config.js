@@ -42,7 +42,6 @@ module.exports = {
         fonts: [
           {
             family: `Indie Flower`,
-            subsets: [`cursive`],
           }
         ],
       },
