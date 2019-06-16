@@ -9,6 +9,7 @@ import { Video } from '../components/Video';
 import { FireFlies } from '../components/FireFlies';
 
 const Container = styled.section`
+  padding: 30px;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -16,11 +17,13 @@ const Container = styled.section`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="You Would Not Believe Your Eyes" />
+    <SEO
+      title="You Would Not Believe Your Eyes"
+      description={`Fireflies but ALMOST every lyric is replaced with "You Would Not Believe Your Eyes" - Owl City`}/>
     <FireFlies />
     <Container>
-      <h1>You would not believe your eyes...</h1>
       <Video />
+      <h1>You would not believe your eyes...</h1>
     </Container>
   </Layout>
 )

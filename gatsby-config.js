@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `You Would Not Believe Your Eyes`,
+    description: `Fireflies but ALMOST every lyric is replaced with "You Would Not Believe Your Eyes" - Owl City`,
+    author: `@cadekynaston`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
