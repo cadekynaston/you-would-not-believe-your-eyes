@@ -97,7 +97,6 @@ export const FireFlies = () => {
   return (
     <Particles
       params={options}
-      canvasClassName="canvas"
-      classNam="canvas-wrapper" />
+      canvasClassName="canvas" />
   )
 }
