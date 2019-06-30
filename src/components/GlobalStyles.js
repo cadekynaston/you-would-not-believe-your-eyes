@@ -41,8 +41,8 @@ export const GlobalStyles = () => (
         }
 
         @media screen and (max-width: 599px) {
-          width: 320px;
-          height: 180px;
+          width: 300px;
+          height: 169px;
         }
 
 
