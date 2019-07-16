@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from '@emotion/styled'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { Video } from '../components/Video';
 import { FireFlies } from '../components/FireFlies';
